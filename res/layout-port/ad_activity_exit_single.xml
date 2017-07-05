@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ad_inner_color_gray_dark"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/ad_inner_exit_single_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/ad_inner_exit_single_button_more"
+            android:layout_width="90dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ad_inner_btn_bg_green_large"
+            android:text="@string/ad_exit_more"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/ad_inner_exit_single_button_yes"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@id/ad_inner_exit_single_button_more"
+            android:background="@drawable/ad_inner_btn_bg_gray"
+            android:text="@string/ad_exit_yes"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/ad_inner_exit_single_button_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@id/ad_inner_exit_single_button_more"
+            android:background="@drawable/ad_inner_btn_bg_gray"
+            android:text="@string/ad_exit_no"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ad_inner_exit_confirm_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ad_inner_exit_single_bottom_layout"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ad_exit_game"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:id="@+id/ad_inner_exit_single_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ad_inner_exit_confirm_text"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

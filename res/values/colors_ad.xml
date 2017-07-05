@@ -1,0 +1,6 @@
+<resources>
+    <color name="ad_inner_color_gray_dark">#4A4A4A</color>
+    <color name="ad_inner_color_gray_light">#9B9B9B</color>
+    <color name="ad_inner_color_line">#19000000</color>
+    <color name="ad_bg_color_green">#FF4CAF50</color>
+</resources>

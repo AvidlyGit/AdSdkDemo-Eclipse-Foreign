@@ -1,0 +1,12 @@
+<resources>
+    <string name="ad_exit_game">Are you sure to exit?</string>
+    <string name="ad_exit_more">More</string>
+    <string name="ad_exit_yes">Yes</string>
+    <string name="ad_exit_no">No</string>
+    <string name="ad_exit_free">Free</string>
+    <string name="ad_inner_play">Play Now</string>
+    <string name="ad_inner_close">Close after %1$d seconds</string>
+    <string name="ad_apps_title">More Games</string>
+    <string name="ad_app_key">"70f4779f0c0c42dffcb518900449a4bf"</string>
+    <string name="ad_close_tip">Make any in-app purchase to remove ads forever</string>
+</resources>
