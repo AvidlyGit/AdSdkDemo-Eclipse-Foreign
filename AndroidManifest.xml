@@ -86,21 +86,25 @@
             android:name="com.vungle.publisher.VideoFullScreenAdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
             android:multiprocess="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.vungle.publisher.MraidFullScreenAdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
             android:multiprocess="true"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.vungle.publisher.FlexViewAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
         <!-- vungle -->
-
 
         <!-- mobvista -->
         <activity
             android:name="com.mobvista.msdk.reward.player.MVRewardVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:multiprocess="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- mobvista -->
 
 
@@ -110,37 +114,41 @@
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="true"
             android:multiprocess="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="false"
             android:multiprocess="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- unity -->
-
 
         <!-- appnext -->
         <activity
             android:name="com.appnext.ads.interstitial.InterstitialActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:hardwareAccelerated="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.appnext.ads.fullscreen.FullscreenActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:hardwareAccelerated="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- appnext -->
-
 
         <!-- applovin -->
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="e-4s7LbXsuJb2oXtoW10amMsJ9scHJhwHmmP6LxzEEZH159qbBqBxA2FKvsbCXWUIHuPdqMs2w840HucShoOtq" />
+            android:value="e-4s7LbXsuJb2oXtoW10amMsJ9scHJhwHmmP6LxzEEZH159qbBqBxA2FKvsbCXWUIHuPdqMs2w840HucShoOtq"/>
 
-        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
-        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+        <activity
+            android:name="com.applovin.adview.AppLovinInterstitialActivity"
+            android:multiprocess="true"/>
+        <activity
+            android:name="com.applovin.adview.AppLovinConfirmationActivity"
+            android:multiprocess="true"/>
         <!-- applovin -->
 
 

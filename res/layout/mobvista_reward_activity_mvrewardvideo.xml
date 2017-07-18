@@ -8,8 +8,7 @@
         android:id="@+id/mobvista_reward_rl_play_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp" >
+       >
 
         <com.mobvista.msdk.playercommon.PlayerView
             android:id="@+id/mobvista_reward_vfpv"
@@ -176,7 +175,7 @@
 
     <ProgressBar
         android:id="@+id/mobvista_reward_pb"
-        style="@android:attr/progressBarStyleLarge"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
