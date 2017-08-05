@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="playable_ads_12dp">12dp</dimen>
+    <dimen name="playable_ads_scene_close_btn_width">30dp</dimen>
+    <dimen name="playable_ads_scene_close_btn_height">30dp</dimen>
+</resources>

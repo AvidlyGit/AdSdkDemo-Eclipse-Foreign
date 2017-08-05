@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="playable_ads_white">#ffffff</color>
+    <color name="playable_ads_grey">#f4f4f4</color>
+    <color name="playable_ads_blue">#3366ff</color>
+    <drawable name="playable_ads_grey_drawable">#99999999</drawable>
+</resources>

@@ -4,14 +4,28 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/ad_video_debug_title"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center_vertical"
-        android:text="视频广告调试工具"
-        android:textSize="20dp"
-        android:paddingLeft="8dp"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ad_video_debug_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="视频广告调试工具"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/ad_video_debug_status"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="8dp"
+            android:textSize="20dp"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +38,8 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="广告联盟"
-            android:paddingLeft="8dp"/>
+            android:paddingLeft="8dp"
+            android:text="广告联盟"/>
 
         <TextView
             android:layout_width="0dp"
