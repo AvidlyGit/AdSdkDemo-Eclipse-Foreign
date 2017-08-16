@@ -55,29 +55,66 @@
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.Translucent" />
         <!-- admob -->
-
 
         <!-- facebook -->
         <activity
             android:name="com.facebook.ads.InterstitialAdActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:multiprocess="true" />
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <!-- facebook -->
 
+        <!-- sdk -->
+        <service android:name="com.avidly.ads.push.AvidlyPushService"/>
 
-        <!-- adcolony -->
+        <activity
+            android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AvidlyDialogStyle"/>
+        <activity
+            android:name="com.avidly.ads.wrapper.video.AvidlyRewardVideoDebugActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDebugActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.avidly.ads.adapter.interstitial.fbn.FbnInterstitialAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.avidly.ads.adapter.interstitial.inner.InnerInterstitialAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.avidly.ads.adapter.exit.inner.single.InnerSingleExitAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.avidly.ads.adapter.exit.inner.list.InnerListExitAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.avidly.ads.adapter.exit.inner.AppsAdsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <!-- sdk -->
+
+         <!-- adcolony -->
         <activity
             android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:multiprocess="true" />
+            android:hardwareAccelerated="true"/>
         <activity
             android:name="com.adcolony.sdk.AdColonyAdViewActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:multiprocess="true" />
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <!-- adcolony -->
 
 
@@ -85,25 +122,22 @@
         <activity
             android:name="com.vungle.publisher.VideoFullScreenAdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.vungle.publisher.MraidFullScreenAdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.vungle.publisher.FlexViewAdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
         <!-- vungle -->
+
 
         <!-- mobvista -->
         <activity
             android:name="com.mobvista.msdk.reward.player.MVRewardVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- mobvista -->
 
@@ -113,13 +147,11 @@
             android:name="com.unity3d.ads.adunit.AdUnitActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="true"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="false"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- unity -->
 
@@ -128,13 +160,11 @@
             android:name="com.appnext.ads.interstitial.InterstitialActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:hardwareAccelerated="true"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.appnext.ads.fullscreen.FullscreenActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:hardwareAccelerated="true"
-            android:multiprocess="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- appnext -->
 
@@ -144,11 +174,9 @@
             android:value="e-4s7LbXsuJb2oXtoW10amMsJ9scHJhwHmmP6LxzEEZH159qbBqBxA2FKvsbCXWUIHuPdqMs2w840HucShoOtq"/>
 
         <activity
-            android:name="com.applovin.adview.AppLovinInterstitialActivity"
-            android:multiprocess="true"/>
+            android:name="com.applovin.adview.AppLovinInterstitialActivity"/>
         <activity
-            android:name="com.applovin.adview.AppLovinConfirmationActivity"
-            android:multiprocess="true"/>
+            android:name="com.applovin.adview.AppLovinConfirmationActivity"/>
         <!-- applovin -->
 
         <!-- chartboost -->
@@ -166,55 +194,6 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"/>
         <!-- playable -->
-
-
-        <!-- sdk -->
-        <service android:name="com.avidly.ads.push.AvidlyPushService" />
-
-        <activity
-            android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDialogActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@style/AvidlyDialogStyle"/>
-        <activity
-            android:name="com.avidly.ads.wrapper.video.AvidlyRewardVideoDebugActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
-        <activity
-            android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDebugActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
-        <activity
-            android:name="com.avidly.ads.adapter.interstitial.fbn.FbnInterstitialAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
-        <activity
-            android:name="com.avidly.ads.adapter.interstitial.inner.InnerInterstitialAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.single.InnerSingleExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Black.NoTitleBar">
-        </activity>
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.list.InnerListExitAdActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Black.NoTitleBar">
-        </activity>
-        <activity
-            android:name="com.avidly.ads.adapter.exit.inner.AppsAdsActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Black.NoTitleBar">
-        </activity>
-        <!-- sdk -->
 
     </application>
 
