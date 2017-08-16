@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB000000">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/playable_ads_12dp"
+        android:background="@drawable/playable_ads_white_round_bg"
+        android:padding="@dimen/playable_ads_12dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="@dimen/playable_ads_12dp"
+            android:layout_marginRight="@dimen/playable_ads_12dp"
+            android:layout_marginTop="@dimen/playable_ads_12dp"
+            android:text="This ad was served by UPLTV. To provide a personalized, more relevant user experience, UPLTV analyzes how you use your apps to predict your preferences and show you ads that are more likely to interest you. A full description of our data practices can be found in our Privacy Policy, and you may be able to opt-out of UPLTV' collection and use of your mobile app data for personalized ads through your device settings."
+            android:textColor="@color/playable_ads_blue"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:layout_marginLeft="@dimen/playable_ads_12dp"
+            android:layout_marginRight="@dimen/playable_ads_12dp"
+            android:layout_marginTop="@dimen/playable_ads_12dp"
+            android:background="@drawable/playable_ads_blue_round_bg"
+            android:gravity="center"
+            android:padding="@dimen/playable_ads_12dp"
+            android:text="OK"
+            android:textColor="@color/playable_ads_white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
