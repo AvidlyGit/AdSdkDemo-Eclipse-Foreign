@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="playable_ad_black">#0F0F0F</color>
+    <color name="playable_ad_blue">#3366ff</color>
+    <color name="playable_ad_grey">#f4f4f4</color>
+    <color name="playable_ad_transparent">#00000000</color>
+    <color name="playable_ad_white">#ffffff</color>
+    <dimen name="playable_ad_10dp">10dp</dimen>
+    <dimen name="playable_ad_12dp">12dp</dimen>
+    <dimen name="playable_ad_24dp">24dp</dimen>
+    <dimen name="playable_ad_scene_close_btn_height">21dp</dimen>
+    <dimen name="playable_ad_scene_close_btn_width">21dp</dimen>
+    <drawable name="playable_ad_grey_drawable">#99999999</drawable>
+    <item name="playable_scene_layer" type="id"/>
+</resources>

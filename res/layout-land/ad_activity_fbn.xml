@@ -40,12 +40,12 @@
             <Button
                 android:id="@+id/ad_fbn_yes"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
                 android:background="@drawable/ad_fbn_btn_bg"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
                 android:text="Go"
                 android:textColor="#ffffff"/>
 

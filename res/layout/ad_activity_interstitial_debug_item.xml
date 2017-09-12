@@ -5,10 +5,10 @@
               android:orientation="vertical">
 
     <TextView
-        android:paddingLeft="8dp"
         android:id="@+id/ad_interstitial_debug_placement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
         android:text="inter_ccc"/>
 
     <LinearLayout
@@ -253,6 +253,213 @@
             android:gravity="center"/>
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
+    <LinearLayout
+        android:id="@+id/ad_interstitial_debug_layout_playable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/ad_interstitial_debug_union_playable"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="playableads"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_sdk_playable"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_server_playable"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_ready_playable"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ad_interstitial_debug_layout_unity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_union_unity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="unityads"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_sdk_unity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_server_unity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_ready_unity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ad_interstitial_debug_layout_mobvista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_union_mobvista"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="mobvista"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_sdk_mobvista"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_server_mobvista"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_ready_mobvista"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ad_interstitial_debug_layout_admob_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_union_admob_r"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="admob_r"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_sdk_admob_r"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_server_admob_r"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_ready_admob_r"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ad_interstitial_debug_layout_vk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_union_vk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="vk"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_sdk_vk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_server_vk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ad_interstitial_debug_ready_vk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
 </LinearLayout>

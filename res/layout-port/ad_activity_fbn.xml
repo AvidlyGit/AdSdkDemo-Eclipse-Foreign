@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/ad_fbn_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,35 +24,18 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
-        <TextView
-            android:id="@+id/ad_fbn_action"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:text="Action"
-            android:textColor="#000000"/>
-
         <Button
             android:id="@+id/ad_fbn_yes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
             android:background="#5a98de"
             android:padding="10dp"
             android:text="@android:string/yes"
             android:textColor="#ffffff"/>
 
-        <Button
-            android:id="@+id/ad_fbn_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="#d8d8d8"
-            android:padding="10dp"
-            android:text="@android:string/no"
-            android:textColor="#5f5f5f"/>
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/ad_fbn_center"

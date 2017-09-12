@@ -2,23 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AB000000">
+    android:background="@color/playable_ad_translucent">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/playable_ads_white_round_bg"
-        android:padding="@dimen/playable_ads_12dp">
+        android:background="@drawable/playable_ad_white_round_bg"
+        android:padding="@dimen/playable_ad_12dp">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/playable_ads_12dp"
-            android:layout_marginRight="@dimen/playable_ads_12dp"
+            android:layout_marginLeft="@dimen/playable_ad_12dp"
+            android:layout_marginRight="@dimen/playable_ad_12dp"
             android:text="Close Game?"
-            android:textColor="@color/playable_ads_blue"
+            android:textColor="@color/playable_ad_blue"
             android:textSize="18sp" />
 
         <TextView
@@ -26,11 +26,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
-            android:layout_marginLeft="@dimen/playable_ads_12dp"
-            android:layout_marginRight="@dimen/playable_ads_12dp"
-            android:layout_marginTop="@dimen/playable_ads_12dp"
+            android:layout_marginLeft="@dimen/playable_ad_12dp"
+            android:layout_marginRight="@dimen/playable_ad_12dp"
+            android:layout_marginTop="@dimen/playable_ad_12dp"
             android:text="you will lose your reward"
-            android:textColor="@color/playable_ads_blue"
+            android:textColor="@color/playable_ad_blue"
             android:textSize="12sp" />
 
         <LinearLayout
@@ -42,25 +42,26 @@
             <TextView
                 android:id="@+id/close"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/playable_ads_12dp"
-                android:layout_marginRight="@dimen/playable_ads_12dp"
-                android:layout_marginTop="@dimen/playable_ads_12dp"
-                android:text="CLOSE VIDEO"
-                android:textColor="@color/playable_ads_blue"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/playable_ad_12dp"
+                android:layout_marginRight="@dimen/playable_ad_12dp"
+                android:layout_marginTop="@dimen/playable_ad_12dp"
+                android:gravity="center"
+                android:text="CLOSE GAME"
+                android:textColor="@color/playable_ad_blue"
                 android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/playable_ads_12dp"
-                android:layout_marginRight="@dimen/playable_ads_12dp"
-                android:layout_marginTop="@dimen/playable_ads_12dp"
-                android:background="@drawable/playable_ads_blue_round_bg"
-                android:padding="@dimen/playable_ads_12dp"
+                android:layout_marginLeft="@dimen/playable_ad_12dp"
+                android:layout_marginRight="@dimen/playable_ad_12dp"
+                android:layout_marginTop="@dimen/playable_ad_12dp"
+                android:background="@drawable/playable_ad_blue_round_bg"
+                android:padding="@dimen/playable_ad_12dp"
                 android:text="RESUME GAME"
-                android:textColor="@color/playable_ads_white"
+                android:textColor="@color/playable_ad_white"
                 android:textSize="12sp" />
 
         </LinearLayout>

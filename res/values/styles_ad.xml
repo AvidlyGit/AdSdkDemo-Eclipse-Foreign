@@ -13,4 +13,11 @@
         <item name="android:backgroundDimAmount">0.7</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
+
+    <style name="PlayableAdTranslucentStyle" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/playable_ad_translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
 </resources>

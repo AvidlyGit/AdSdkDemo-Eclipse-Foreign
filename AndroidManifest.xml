@@ -77,11 +77,21 @@
         <activity
             android:name="com.avidly.ads.wrapper.video.AvidlyRewardVideoDebugActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.avidly.ads.debug.video.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDebugActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.avidly.ads.debug.inter.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.avidly.ads.adapter.interstitial.fbn.FbnInterstitialAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -104,6 +114,10 @@
             android:name="com.avidly.ads.adapter.exit.inner.AppsAdsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.avidly.ads.helper.AvidlyCheatActivity"
+            android:theme="@android:style/Theme.NoDisplay">
         </activity>
         <!-- sdk -->
 
@@ -172,7 +186,6 @@
         <meta-data
             android:name="applovin.sdk.key"
             android:value="e-4s7LbXsuJb2oXtoW10amMsJ9scHJhwHmmP6LxzEEZH159qbBqBxA2FKvsbCXWUIHuPdqMs2w840HucShoOtq"/>
-
         <activity
             android:name="com.applovin.adview.AppLovinInterstitialActivity"/>
         <activity
@@ -190,10 +203,34 @@
 
         <!-- playable -->
         <activity
-            android:name="com.avidly.playableads.scene.view.AvidlyPlayableActivity"
+            android:name="com.avidly.playablead.scene.view.AvidlyPlayableActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="portrait"/>
+            android:launchMode="singleInstance"
+            android:theme="@style/PlayableAdTranslucentStyle"/>
         <!-- playable -->
+
+        <!-- ironsource -->
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent"/>
+        <!-- ironsource -->
+
+        <!-- vk -->
+        <activity
+            android:name="com.my.target.ads.MyTargetActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <!-- vk -->
 
     </application>
 
