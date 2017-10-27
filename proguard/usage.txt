@@ -1,0 +1,708 @@
+com.avidly.adsdk.demo.BannerActivity:
+    private static final java.lang.String TAG
+com.avidly.adsdk.demo.BuildConfig
+com.avidly.adsdk.demo.ExitActivity:
+    private static final java.lang.String TAG
+com.avidly.adsdk.demo.InterstitialActivity:
+    private static final java.lang.String TAG
+    com.avidly.ads.AvidlyInterstitialAd mInterstitialAdCCC
+com.avidly.adsdk.demo.MainActivity:
+    private static final java.lang.String TAG
+com.avidly.adsdk.demo.R:
+    10:10:public R()
+com.avidly.adsdk.demo.VideoActivity:
+    private static final java.lang.String TAG
+com.google.ads.AdRequest:
+    public static final java.lang.String VERSION
+    public static final java.lang.String LOGTAG
+    public static final java.lang.String TEST_EMULATOR
+    private AdRequest()
+com.google.ads.AdSize:
+    public static final int FULL_WIDTH
+    public static final int AUTO_HEIGHT
+    public static final int LANDSCAPE_AD_HEIGHT
+    public static final int PORTRAIT_AD_HEIGHT
+    public static final int LARGE_AD_HEIGHT
+    public AdSize(int,int)
+    public final boolean isFullWidth()
+    public final boolean isAutoHeight()
+    public final boolean isCustomAdSize()
+    public final int getWidthInPixels(android.content.Context)
+    public final int getHeightInPixels(android.content.Context)
+    public final boolean isSizeAppropriate(int,int)
+    public final varargs com.google.ads.AdSize findBestSize(com.google.ads.AdSize[])
+com.google.ads.mediation.EmptyNetworkExtras
+com.google.ads.mediation.MediationAdRequest:
+    public java.lang.Integer getAgeInYears()
+    public java.util.Date getBirthday()
+    public com.google.ads.AdRequest$Gender getGender()
+    public java.util.Set getKeywords()
+    public android.location.Location getLocation()
+    public boolean isTesting()
+com.google.ads.mediation.MediationBannerListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onClick(com.google.ads.mediation.MediationBannerAdapter)
+com.google.ads.mediation.MediationInterstitialListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.ads.mediation.customevent.CustomEventAdapter:
+    private final void zza(android.view.View)
+    static synthetic void zza(com.google.ads.mediation.customevent.CustomEventAdapter,android.view.View)
+com.google.ads.mediation.customevent.CustomEventAdapter$zza:
+    public final void onReceivedAd(android.view.View)
+    public final void onFailedToReceiveAd()
+    public final void onClick()
+    public final void onPresentScreen()
+    public final void onDismissScreen()
+    public final void onLeaveApplication()
+com.google.ads.mediation.customevent.CustomEventAdapter$zzb:
+    public final void onReceivedAd()
+    public final void onFailedToReceiveAd()
+    public final void onPresentScreen()
+    public final void onDismissScreen()
+    public final void onLeaveApplication()
+com.google.ads.mediation.customevent.CustomEventBannerListener:
+    public abstract void onReceivedAd(android.view.View)
+    public abstract void onClick()
+com.google.ads.mediation.customevent.CustomEventInterstitialListener:
+    public abstract void onReceivedAd()
+com.google.ads.mediation.customevent.CustomEventListener
+com.google.android.gms.actions.ItemListIntents:
+    public static final java.lang.String ACTION_CREATE_ITEM_LIST
+    public static final java.lang.String ACTION_DELETE_ITEM_LIST
+    public static final java.lang.String ACTION_APPEND_ITEM_LIST
+    public static final java.lang.String ACTION_ACCEPT_ITEM
+    public static final java.lang.String ACTION_REJECT_ITEM
+    public static final java.lang.String ACTION_DELETE_ITEM
+    public static final java.lang.String EXTRA_LIST_NAME
+    public static final java.lang.String EXTRA_LIST_QUERY
+    public static final java.lang.String EXTRA_ITEM_NAME
+    public static final java.lang.String EXTRA_ITEM_NAMES
+    public static final java.lang.String EXTRA_ITEM_QUERY
+com.google.android.gms.actions.NoteIntents:
+    public static final java.lang.String ACTION_CREATE_NOTE
+    public static final java.lang.String ACTION_APPEND_NOTE
+    public static final java.lang.String ACTION_DELETE_NOTE
+    public static final java.lang.String EXTRA_NAME
+    public static final java.lang.String EXTRA_TEXT
+    public static final java.lang.String EXTRA_NOTE_QUERY
+com.google.android.gms.actions.ReserveIntents:
+    public static final java.lang.String ACTION_RESERVE_TAXI_RESERVATION
+com.google.android.gms.actions.SearchIntents:
+    public static final java.lang.String ACTION_SEARCH
+    public static final java.lang.String EXTRA_QUERY
+com.google.android.gms.ads.internal.zzbn:
+    public final void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError)
+com.google.android.gms.auth.api.signin.GoogleSignInAccount:
+    public android.accounts.Account getAccount()
+    public final boolean zzmw()
+    public final java.lang.String zzmx()
+    public java.util.Set getGrantedScopes()
+    public final java.lang.String zzmy()
+com.google.android.gms.auth.api.signin.GoogleSignInOptions:
+    public com.google.android.gms.common.api.Scope[] getScopeArray()
+    public final android.accounts.Account getAccount()
+    public final boolean isIdTokenRequested()
+    public final boolean zzmB()
+    public final java.lang.String getServerClientId()
+    public final java.lang.String zzmC()
+    private final org.json.JSONObject zzmz()
+    static synthetic java.util.ArrayList zza(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic boolean zzb(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic boolean zzc(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic boolean zzd(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic java.lang.String zze(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic android.accounts.Account zzf(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic java.lang.String zzg(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic java.util.ArrayList zzh(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    static synthetic java.util.Map zzx(java.util.List)
+com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder:
+    public GoogleSignInOptions$Builder(com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestEmail()
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestIdToken(java.lang.String)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestServerAuthCode(java.lang.String)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestServerAuthCode(java.lang.String,boolean)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder setAccountName(java.lang.String)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder setHostedDomain(java.lang.String)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder addExtension(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    private final java.lang.String zzbR(java.lang.String)
+com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension:
+    public abstract android.os.Bundle toBundle()
+com.google.android.gms.auth.api.signin.internal.zzn:
+    public zzn(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+com.google.android.gms.auth.api.signin.internal.zzy:
+    public final void zza(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    private final void zzr(java.lang.String,java.lang.String)
+com.google.android.gms.dynamic.LifecycleDelegate:
+    public abstract void onInflate(android.app.Activity,android.os.Bundle,android.os.Bundle)
+    public abstract void onCreate(android.os.Bundle)
+    public abstract android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
+    public abstract void onStart()
+    public abstract void onResume()
+    public abstract void onPause()
+    public abstract void onStop()
+    public abstract void onDestroyView()
+    public abstract void onDestroy()
+    public abstract void onLowMemory()
+    public abstract void onSaveInstanceState(android.os.Bundle)
+com.google.android.gms.dynamic.zza:
+    private com.google.android.gms.dynamic.LifecycleDelegate zzaSr
+    private android.os.Bundle zzaSs
+    private java.util.LinkedList zzaSt
+    public final com.google.android.gms.dynamic.LifecycleDelegate zztx()
+    private final void zzaR(int)
+    private final void zza(android.os.Bundle,com.google.android.gms.dynamic.zzi)
+    protected abstract void zza(com.google.android.gms.dynamic.zzo)
+    public final void onInflate(android.app.Activity,android.os.Bundle,android.os.Bundle)
+    public final void onCreate(android.os.Bundle)
+    public final android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
+    protected void zza(android.widget.FrameLayout)
+    public static void zzb(android.widget.FrameLayout)
+    public final void onStart()
+    public final void onResume()
+    public final void onPause()
+    public final void onStop()
+    public final void onDestroyView()
+    public final void onDestroy()
+    public final void onSaveInstanceState(android.os.Bundle)
+    public final void onLowMemory()
+    static synthetic com.google.android.gms.dynamic.LifecycleDelegate zza(com.google.android.gms.dynamic.zza,com.google.android.gms.dynamic.LifecycleDelegate)
+    static synthetic java.util.LinkedList zza(com.google.android.gms.dynamic.zza)
+    static synthetic com.google.android.gms.dynamic.LifecycleDelegate zzb(com.google.android.gms.dynamic.zza)
+    static synthetic android.os.Bundle zza(com.google.android.gms.dynamic.zza,android.os.Bundle)
+com.google.android.gms.dynamic.zzb:
+    public final void zza(com.google.android.gms.dynamic.LifecycleDelegate)
+com.google.android.gms.dynamic.zzc
+com.google.android.gms.dynamic.zzd
+com.google.android.gms.dynamic.zze
+com.google.android.gms.dynamic.zzf
+com.google.android.gms.dynamic.zzg
+com.google.android.gms.dynamic.zzh
+com.google.android.gms.dynamic.zzi
+com.google.android.gms.dynamic.zzo:
+    public abstract void zza(com.google.android.gms.dynamic.LifecycleDelegate)
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader:
+    public static java.lang.ClassLoader sClassLoader
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor:
+    public static final java.lang.String MODULE_ID
+    public static final int MODULE_VERSION
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.flags.ModuleDescriptor:
+    public static final java.lang.String MODULE_ID
+    public static final int MODULE_VERSION
+com.google.android.gms.iid.MessengerCompat:
+    public final void send(android.os.Message)
+com.google.android.gms.iid.zzb:
+    public abstract void send(android.os.Message)
+com.google.android.gms.iid.zzc:
+    public final void send(android.os.Message)
+com.google.android.gms.internal.adg:
+    public static com.google.android.gms.internal.adg zzH(byte[])
+    public final void zza(com.google.android.gms.internal.adp,int)
+com.google.android.gms.internal.adh:
+    public final void zza(int,double)
+    public final void zzc(int,float)
+    public final void zzc(int,long)
+    private final void zzaQ(long)
+    public static int zzcw(int)
+com.google.android.gms.internal.adj:
+    public final java.lang.Object zza(com.google.android.gms.internal.adk)
+com.google.android.gms.internal.adk:
+    protected final boolean zzcsp
+    public static com.google.android.gms.internal.adk zza(int,java.lang.Class,long)
+    private adk(int,java.lang.Class,int,boolean)
+    final java.lang.Object zzX(java.util.List)
+    private final java.lang.Object zzb(com.google.android.gms.internal.adg)
+com.google.android.gms.internal.adm:
+    final java.lang.Object zzb(com.google.android.gms.internal.adk)
+com.google.android.gms.internal.adn:
+    public static boolean equals(float[],float[])
+    public static boolean equals(boolean[],boolean[])
+    public static int hashCode(float[])
+    public static int hashCode(boolean[])
+com.google.android.gms.internal.aep:
+    public final void onCustomTabsServiceConnected(android.content.ComponentName,android.support.customtabs.CustomTabsClient)
+    public final void onServiceDisconnected(android.content.ComponentName)
+com.google.android.gms.internal.aeq:
+    public abstract void zza(android.support.customtabs.CustomTabsClient)
+    public abstract void zzdZ()
+com.google.android.gms.internal.ik:
+    public static java.lang.Object zzu(java.lang.Object)
+com.google.android.gms.internal.zzaha:
+    public final void zzea()
+    public final void zzeb()
+com.google.android.gms.internal.zzazp:
+    public final void zzoS()
+com.google.android.gms.internal.zzbap:
+    public zzbap(com.google.android.gms.internal.zzbef,com.google.android.gms.tasks.TaskCompletionSource)
+com.google.android.gms.internal.zzbaw:
+    public final boolean zzpw()
+com.google.android.gms.internal.zzbay:
+    protected zzbay(com.google.android.gms.common.api.Api$zzc,com.google.android.gms.common.api.GoogleApiClient)
+com.google.android.gms.internal.zzbaz:
+    public abstract void zzr(com.google.android.gms.common.api.Status)
+com.google.android.gms.internal.zzbbx:
+    private final com.google.android.gms.common.data.DataHolder zzaCX
+    protected zzbbx(com.google.android.gms.common.data.DataHolder)
+    public final void zzq(java.lang.Object)
+    public final void zzpT()
+    protected abstract void zza(java.lang.Object,com.google.android.gms.common.data.DataHolder)
+com.google.android.gms.internal.zzbby:
+    protected zzbby(com.google.android.gms.common.data.DataHolder,com.google.android.gms.common.api.Status)
+com.google.android.gms.internal.zzbdb:
+    public static void zzql()
+    public final com.google.android.gms.tasks.Task zza(com.google.android.gms.common.api.GoogleApi,com.google.android.gms.internal.zzbee,com.google.android.gms.internal.zzbey)
+    public final com.google.android.gms.tasks.Task zza(com.google.android.gms.common.api.GoogleApi,com.google.android.gms.internal.zzbdy)
+com.google.android.gms.internal.zzbdm:
+    private static com.google.android.gms.internal.zzbdm zzaEB
+    private final java.lang.String mAppId
+    private final com.google.android.gms.common.api.Status zzaEC
+    private final boolean zzaED
+    private final boolean zzaEE
+    private zzbdm(android.content.Context)
+    public static com.google.android.gms.common.api.Status zzaz(android.content.Context)
+    public static java.lang.String zzqA()
+    public static boolean zzqB()
+    private static com.google.android.gms.internal.zzbdm zzcu(java.lang.String)
+com.google.android.gms.internal.zzbdw:
+    public final void zza(com.google.android.gms.internal.zzbdz)
+    public final boolean zzoc()
+com.google.android.gms.internal.zzbea:
+    public static com.google.android.gms.internal.zzbdy zza(java.lang.Object,java.lang.String)
+com.google.android.gms.internal.zzbee:
+    protected zzbee(com.google.android.gms.internal.zzbdw)
+com.google.android.gms.internal.zzber:
+    public static void zza(com.google.android.gms.common.api.Status,java.lang.Object,com.google.android.gms.tasks.TaskCompletionSource)
+com.google.android.gms.internal.zzbey:
+    private final com.google.android.gms.internal.zzbdy zzaEN
+    protected zzbey(com.google.android.gms.internal.zzbdy)
+    public final com.google.android.gms.internal.zzbdy zzqG()
+com.google.android.gms.internal.zzbez:
+    private java.lang.String zzBN
+    private java.lang.Object zzBO
+    private java.lang.Object zzaFq
+    protected zzbez(java.lang.String,java.lang.Object)
+    public static com.google.android.gms.internal.zzbez zzg(java.lang.String,boolean)
+    public static com.google.android.gms.internal.zzbez zza(java.lang.String,java.lang.Long)
+    public static com.google.android.gms.internal.zzbez zza(java.lang.String,java.lang.Integer)
+    public static com.google.android.gms.internal.zzbez zza(java.lang.String,java.lang.Float)
+    public static com.google.android.gms.internal.zzbez zzv(java.lang.String,java.lang.String)
+com.google.android.gms.internal.zzbfa
+com.google.android.gms.internal.zzbfb
+com.google.android.gms.internal.zzbfc
+com.google.android.gms.internal.zzbfd
+com.google.android.gms.internal.zzbfe
+com.google.android.gms.internal.zzbgb:
+    private final java.lang.String mTag
+    private final java.lang.String zzaIc
+    private final com.google.android.gms.common.internal.zzaj zzaIA
+    private final int zzagX
+    private static varargs java.lang.String zzb(java.lang.String[])
+    public varargs zzbgb(java.lang.String,java.lang.String[])
+    private zzbgb(java.lang.String,java.lang.String)
+    private final int getLogLevel()
+    private final boolean zzz(int)
+    public final varargs void zza(java.lang.String,java.lang.Object[])
+    public final varargs void zzb(java.lang.String,java.lang.Object[])
+    public final varargs void zze(java.lang.String,java.lang.Object[])
+    public final varargs void zzf(java.lang.String,java.lang.Object[])
+    public final varargs void zza(java.lang.String,java.lang.Throwable,java.lang.Object[])
+    public final void zzd(java.lang.Throwable)
+    private final varargs java.lang.String format(java.lang.String,java.lang.Object[])
+com.google.android.gms.internal.zzbgj:
+    private zzbgj(int,boolean,int,boolean,java.lang.String,int,java.lang.Class,com.google.android.gms.internal.zzbgk)
+    public final int zzrM()
+    public static com.google.android.gms.internal.zzbgj zzj(java.lang.String,int)
+    public static com.google.android.gms.internal.zzbgj zzk(java.lang.String,int)
+    public static com.google.android.gms.internal.zzbgj zzl(java.lang.String,int)
+    public static com.google.android.gms.internal.zzbgj zza(java.lang.String,int,java.lang.Class)
+    public static com.google.android.gms.internal.zzbgj zzb(java.lang.String,int,java.lang.Class)
+    public static com.google.android.gms.internal.zzbgj zza(java.lang.String,int,com.google.android.gms.internal.zzbgk,boolean)
+com.google.android.gms.internal.zzbs:
+    protected abstract void zzi(java.lang.String)
+com.google.android.gms.internal.zzbzu:
+    private final int zzBM
+    private final java.lang.String zzBN
+    private final java.lang.Object zzBO
+    private zzbzu(int,java.lang.String,java.lang.Object)
+    public final java.lang.String getKey()
+    public final java.lang.Object zzdI()
+    public static com.google.android.gms.internal.zzbzw zzb(int,java.lang.String,java.lang.Boolean)
+    public static com.google.android.gms.internal.zzbzx zzb(int,java.lang.String,int)
+    public static com.google.android.gms.internal.zzbzy zzb(int,java.lang.String,long)
+    public final int getSource()
+    protected abstract java.lang.Object zza(com.google.android.gms.internal.zzcac)
+    synthetic zzbzu(int,java.lang.String,java.lang.Object,com.google.android.gms.internal.zzbzv)
+com.google.android.gms.internal.zzbzv
+com.google.android.gms.internal.zzbzw:
+    public zzbzw(int,java.lang.String,java.lang.Boolean)
+    private final java.lang.Boolean zzb(com.google.android.gms.internal.zzcac)
+    public final synthetic java.lang.Object zza(com.google.android.gms.internal.zzcac)
+com.google.android.gms.internal.zzbzx:
+    public zzbzx(int,java.lang.String,java.lang.Integer)
+    private final java.lang.Integer zzc(com.google.android.gms.internal.zzcac)
+    public final synthetic java.lang.Object zza(com.google.android.gms.internal.zzcac)
+com.google.android.gms.internal.zzbzy:
+    public zzbzy(int,java.lang.String,java.lang.Long)
+    private final java.lang.Long zzd(com.google.android.gms.internal.zzcac)
+    public final synthetic java.lang.Object zza(com.google.android.gms.internal.zzcac)
+com.google.android.gms.internal.zzbzz:
+    public zzbzz(int,java.lang.String,java.lang.String)
+    private final java.lang.String zze(com.google.android.gms.internal.zzcac)
+    public final synthetic java.lang.Object zza(com.google.android.gms.internal.zzcac)
+com.google.android.gms.internal.zzcaa:
+    public final void zza(com.google.android.gms.internal.zzbzu)
+com.google.android.gms.internal.zzcab:
+    public final void initialize(android.content.Context)
+    public final java.lang.Object zzb(com.google.android.gms.internal.zzbzu)
+com.google.android.gms.internal.zzcad:
+    public static com.google.android.gms.internal.zzcac asInterface(android.os.IBinder)
+com.google.android.gms.internal.zzcae:
+    zzcae(android.os.IBinder)
+com.google.android.gms.internal.zzcaf:
+    private static com.google.android.gms.internal.zzcaf zzua()
+    public static com.google.android.gms.internal.zzcaa zzub()
+    public static com.google.android.gms.internal.zzcab zzuc()
+com.google.android.gms.internal.zzcry:
+    public abstract void zza(com.google.android.gms.internal.zzcrw,byte[],java.lang.String)
+    public abstract void zza(com.google.android.gms.internal.zzcrw)
+    public abstract void zzAj()
+    public abstract void zzb(com.google.android.gms.internal.zzcrw)
+    public abstract void zzc(com.google.android.gms.internal.zzcrw)
+    public abstract void zzd(com.google.android.gms.internal.zzcrw)
+    public abstract void zza(com.google.android.gms.internal.zzcrw,java.lang.String)
+com.google.android.gms.internal.zzcrz:
+    public final void zza(com.google.android.gms.internal.zzcrw,byte[],java.lang.String)
+    public final void zza(com.google.android.gms.internal.zzcrw)
+    public final void zzAj()
+    public final void zzb(com.google.android.gms.internal.zzcrw)
+    public final void zzc(com.google.android.gms.internal.zzcrw)
+    public final void zzd(com.google.android.gms.internal.zzcrw)
+    public final void zza(com.google.android.gms.internal.zzcrw,java.lang.String)
+com.google.android.gms.internal.zzcsa:
+    public com.google.android.gms.common.api.PendingResult attest(com.google.android.gms.common.api.GoogleApiClient,byte[])
+    public static com.google.android.gms.common.api.PendingResult zza(com.google.android.gms.common.api.GoogleApiClient,byte[],java.lang.String)
+    public com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.util.List,java.lang.String)
+    public varargs com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,int[])
+    public varargs com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,java.lang.String,int[])
+    public static varargs com.google.android.gms.common.api.PendingResult zza(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,int,java.lang.String,int[])
+    public varargs boolean lookupUriInLocalBlacklist(java.lang.String,int[])
+    public boolean isVerifyAppsEnabled(android.content.Context)
+    public com.google.android.gms.common.api.PendingResult isVerifyAppsEnabled(com.google.android.gms.common.api.GoogleApiClient)
+    public com.google.android.gms.common.api.PendingResult enableVerifyApps(com.google.android.gms.common.api.GoogleApiClient)
+    public com.google.android.gms.common.api.PendingResult listHarmfulApps(com.google.android.gms.common.api.GoogleApiClient)
+    public com.google.android.gms.common.api.PendingResult verifyWithRecaptcha(com.google.android.gms.common.api.GoogleApiClient,java.lang.String)
+com.google.android.gms.internal.zzcsa$zza
+com.google.android.gms.internal.zzcsa$zzb
+com.google.android.gms.internal.zzcsa$zzc
+com.google.android.gms.internal.zzcsa$zzd
+com.google.android.gms.internal.zzcsa$zze
+com.google.android.gms.internal.zzcsa$zzg
+com.google.android.gms.internal.zzcsa$zzh
+com.google.android.gms.internal.zzcsa$zzi:
+    public final java.util.List getDetectedThreats()
+com.google.android.gms.internal.zzcsa$zzj
+com.google.android.gms.internal.zzcsb
+com.google.android.gms.internal.zzcsd
+com.google.android.gms.internal.zzcse
+com.google.android.gms.internal.zzcsf
+com.google.android.gms.internal.zzcsg
+com.google.android.gms.internal.zzcsh
+com.google.android.gms.internal.zzcsi
+com.google.android.gms.internal.zzcsj
+com.google.android.gms.internal.zzcsk
+com.google.android.gms.internal.zzcsl
+com.google.android.gms.internal.zzcsn:
+    public final void zzb(com.google.android.gms.internal.zzcrw,byte[],java.lang.String)
+com.google.android.gms.internal.zzcsp:
+    public zzcsp(byte[])
+    public final byte[] getBytes()
+    public final com.google.android.gms.internal.zzcsp zzbu(int)
+com.google.android.gms.internal.zzcsq
+com.google.android.gms.internal.zzcsr:
+    public final boolean zzr(byte[])
+com.google.android.gms.internal.zzcss:
+    private final java.lang.String zzD
+    private final java.lang.String zzbCo
+    private final java.lang.String zzbCp
+    private final int zzbCq
+    private final java.lang.String mPath
+    private final java.lang.String zzvi
+    public zzcss(java.lang.String)
+    private static java.lang.String zzeO(java.lang.String)
+    private static java.lang.String zzeP(java.lang.String)
+    private final java.lang.String zzeQ(java.lang.String)
+    public final java.util.List zzAk()
+    private final java.util.List zzAl()
+    private final java.util.List zzAm()
+    private static java.lang.String zzeR(java.lang.String)
+    private static boolean isHexDigit(char)
+    private static java.lang.String zzeS(java.lang.String)
+    private static java.lang.String zzeT(java.lang.String)
+com.google.android.gms.internal.zzcss$zza
+com.google.android.gms.internal.zzcst
+com.google.android.gms.internal.zzctz:
+    private final android.os.PowerManager$WakeLock zzbCX
+    private android.os.WorkSource zzbCY
+    private final int zzbCZ
+    private final java.lang.String zzaJp
+    private final java.lang.String zzbDa
+    private final java.lang.String zzaJr
+    private final android.content.Context mContext
+    private boolean zzbDb
+    private int zzbDc
+    private int zzbDd
+    private zzctz(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String)
+    private zzctz(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public zzctz(android.content.Context,int,java.lang.String)
+    public final void acquire(long)
+    public final void release()
+    private final boolean zzeV(java.lang.String)
+    private final java.lang.String zzi(java.lang.String,boolean)
+    public final void setReferenceCounted(boolean)
+    public final boolean isHeld()
+com.google.android.gms.internal.zzef:
+    public static java.util.HashMap zzc(android.os.Parcel)
+com.google.android.gms.internal.zznl:
+    public final boolean mayLaunchUrl(android.net.Uri,android.os.Bundle,java.util.List)
+    public final void zza(android.support.customtabs.CustomTabsClient)
+    public final void zzdZ()
+com.google.android.gms.internal.zznm:
+    public abstract void zzea()
+    public abstract void zzeb()
+com.google.android.gms.internal.zzvp:
+    public final void onClick(com.google.ads.mediation.MediationBannerAdapter)
+    public final void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public final void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    public final void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public final void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    public final void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public final void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+    public final void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public final void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.android.gms.internal.zzvq
+com.google.android.gms.internal.zzvr
+com.google.android.gms.internal.zzvs
+com.google.android.gms.internal.zzvt
+com.google.android.gms.internal.zzvv
+com.google.android.gms.internal.zzvw
+com.google.android.gms.internal.zzvx
+com.google.android.gms.internal.zzvy
+com.google.android.gms.internal.zzwa
+com.google.android.gms.internal.zzwe:
+    public final void zzea()
+    public final void zzeb()
+com.google.android.gms.location.places.PlaceReport:
+    public static com.google.android.gms.location.places.PlaceReport create(java.lang.String,java.lang.String)
+com.google.android.gms.safetynet.SafeBrowsingData:
+    public SafeBrowsingData(java.lang.String)
+com.google.android.gms.safetynet.SafeBrowsingThreat:
+    public static final int TYPE_POTENTIALLY_HARMFUL_APPLICATION
+    public static final int TYPE_SOCIAL_ENGINEERING
+    private int zzbBK
+    public SafeBrowsingThreat(int)
+    public int getThreatType()
+com.google.android.gms.safetynet.SafetyNet:
+    public static com.google.android.gms.safetynet.SafetyNetClient getClient(android.content.Context)
+    public static com.google.android.gms.safetynet.SafetyNetClient getClient(android.app.Activity)
+com.google.android.gms.safetynet.SafetyNetApi:
+    public abstract com.google.android.gms.common.api.PendingResult attest(com.google.android.gms.common.api.GoogleApiClient,byte[])
+    public abstract com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.util.List,java.lang.String)
+    public varargs abstract com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,int[])
+    public varargs abstract com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,java.lang.String,int[])
+    public varargs abstract boolean lookupUriInLocalBlacklist(java.lang.String,int[])
+    public abstract boolean isVerifyAppsEnabled(android.content.Context)
+    public abstract com.google.android.gms.common.api.PendingResult isVerifyAppsEnabled(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult enableVerifyApps(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult listHarmfulApps(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult verifyWithRecaptcha(com.google.android.gms.common.api.GoogleApiClient,java.lang.String)
+com.google.android.gms.safetynet.SafetyNetApi$AttestationResponse:
+    public java.lang.String getJwsResult()
+com.google.android.gms.safetynet.SafetyNetApi$AttestationResult:
+    public abstract java.lang.String getJwsResult()
+com.google.android.gms.safetynet.SafetyNetApi$HarmfulAppsResponse:
+    public java.util.List getHarmfulAppsList()
+    public long getLastScanTimeMs()
+com.google.android.gms.safetynet.SafetyNetApi$HarmfulAppsResult:
+    public abstract java.util.List getHarmfulAppsList()
+    public abstract long getLastScanTimeMs()
+com.google.android.gms.safetynet.SafetyNetApi$RecaptchaTokenResponse:
+    public java.lang.String getTokenResult()
+com.google.android.gms.safetynet.SafetyNetApi$RecaptchaTokenResult:
+    public abstract java.lang.String getTokenResult()
+com.google.android.gms.safetynet.SafetyNetApi$SafeBrowsingResponse:
+    public java.lang.String getMetadata()
+    public java.util.List getDetectedThreats()
+com.google.android.gms.safetynet.SafetyNetApi$SafeBrowsingResult:
+    public abstract java.util.List getDetectedThreats()
+com.google.android.gms.safetynet.SafetyNetApi$VerifyAppsUserResponse:
+    public boolean isVerifyAppsEnabled()
+com.google.android.gms.safetynet.SafetyNetApi$VerifyAppsUserResult:
+    public abstract boolean isVerifyAppsEnabled()
+com.google.android.gms.safetynet.SafetyNetClient:
+    SafetyNetClient(android.content.Context)
+    SafetyNetClient(android.app.Activity)
+    public com.google.android.gms.tasks.Task attest(byte[],java.lang.String)
+    public varargs com.google.android.gms.tasks.Task lookupUri(java.lang.String,java.lang.String,int[])
+    public com.google.android.gms.tasks.Task isVerifyAppsEnabled()
+    public com.google.android.gms.tasks.Task enableVerifyApps()
+    public com.google.android.gms.tasks.Task listHarmfulApps()
+    public com.google.android.gms.tasks.Task verifyWithRecaptcha(java.lang.String)
+    public com.google.android.gms.tasks.Task initSafeBrowsing()
+    public com.google.android.gms.tasks.Task shutdownSafeBrowsing()
+com.google.android.gms.safetynet.SafetyNetStatusCodes:
+    public static final int SAFE_BROWSING_UNSUPPORTED_THREAT_TYPES
+    public static final int SAFE_BROWSING_MISSING_API_KEY
+    public static final int SAFE_BROWSING_API_NOT_AVAILABLE
+    public static final int VERIFY_APPS_NOT_AVAILABLE
+    public static final int VERIFY_APPS_INTERNAL_ERROR
+    public static final int VERIFY_APPS_NOT_ENABLED
+    public static final int UNSUPPORTED_SDK_VERSION
+    public static final int RECAPTCHA_INVALID_SITEKEY
+    public static final int RECAPTCHA_INVALID_KEYTYPE
+    public static final int SAFE_BROWSING_API_NOT_INITIALIZED
+    public static final int OS_VERSION_NOT_SUPPORTED
+    public static final int INVALID_ADMIN_APPLICATION
+    public static final int STRICT_MODE_VERIFY_APPS_NOT_AVAILABLE
+    public static final int RECAPTCHA_INVALID_PACKAGE_NAME
+com.google.android.gms.safetynet.VerifyAppsConstants:
+    public static final int HARMFUL_CATEGORY_RANSOMWARE
+    public static final int HARMFUL_CATEGORY_PHISHING
+    public static final int HARMFUL_CATEGORY_TROJAN
+    public static final int HARMFUL_CATEGORY_UNCOMMON
+    public static final int HARMFUL_CATEGORY_FRAUDWARE
+    public static final int HARMFUL_CATEGORY_TOLL_FRAUD
+    public static final int HARMFUL_CATEGORY_WAP_FRAUD
+    public static final int HARMFUL_CATEGORY_CALL_FRAUD
+    public static final int HARMFUL_CATEGORY_BACKDOOR
+    public static final int HARMFUL_CATEGORY_SPYWARE
+    public static final int HARMFUL_CATEGORY_GENERIC_MALWARE
+    public static final int HARMFUL_CATEGORY_HARMFUL_SITE
+    public static final int HARMFUL_CATEGORY_WINDOWS_MALWARE
+    public static final int HARMFUL_CATEGORY_HOSTILE_DOWNLOADER
+    public static final int HARMFUL_CATEGORY_NON_ANDROID_THREAT
+    public static final int HARMFUL_CATEGORY_ROOTING
+    public static final int HARMFUL_CATEGORY_PRIVILEGE_ESCALATION
+    public static final int HARMFUL_CATEGORY_TRACKING
+    public static final int HARMFUL_CATEGORY_SPAM
+    public static final int HARMFUL_CATEGORY_DENIAL_OF_SERVICE
+    public static final int HARMFUL_CATEGORY_DATA_COLLECTION
+com.google.android.gms.safetynet.zza:
+    public final java.lang.String getJwsResult()
+com.google.android.gms.safetynet.zzf:
+    public final java.lang.String getTokenResult()
+com.google.android.gms.safetynet.zzj
+com.google.android.gms.safetynet.zzk
+com.google.android.gms.safetynet.zzl
+com.google.android.gms.security.ProviderInstaller:
+    public static final java.lang.String PROVIDER_NAME
+    public static void installIfNeeded(android.content.Context)
+    public static void installIfNeededAsync(android.content.Context,com.google.android.gms.security.ProviderInstaller$ProviderInstallListener)
+    static synthetic com.google.android.gms.common.zze zzAo()
+com.google.android.gms.security.ProviderInstaller$ProviderInstallListener:
+    public abstract void onProviderInstalled()
+    public abstract void onProviderInstallFailed(int,android.content.Intent)
+com.google.android.gms.security.zza
+com.google.android.gms.tasks.Continuation:
+    public abstract java.lang.Object then(com.google.android.gms.tasks.Task)
+com.google.android.gms.tasks.OnFailureListener:
+    public abstract void onFailure(java.lang.Exception)
+com.google.android.gms.tasks.OnSuccessListener:
+    public abstract void onSuccess(java.lang.Object)
+com.google.android.gms.tasks.RuntimeExecutionException:
+    public RuntimeExecutionException(java.lang.Throwable)
+com.google.android.gms.tasks.Task:
+    public abstract java.lang.Object getResult()
+    public abstract java.lang.Object getResult(java.lang.Class)
+    public abstract com.google.android.gms.tasks.Task addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener)
+    public abstract com.google.android.gms.tasks.Task addOnSuccessListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnSuccessListener)
+    public abstract com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
+    public abstract com.google.android.gms.tasks.Task addOnFailureListener(com.google.android.gms.tasks.OnFailureListener)
+    public abstract com.google.android.gms.tasks.Task addOnFailureListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnFailureListener)
+    public abstract com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
+    public com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
+    public com.google.android.gms.tasks.Task continueWith(com.google.android.gms.tasks.Continuation)
+    public com.google.android.gms.tasks.Task continueWith(java.util.concurrent.Executor,com.google.android.gms.tasks.Continuation)
+    public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
+    public com.google.android.gms.tasks.Task continueWithTask(java.util.concurrent.Executor,com.google.android.gms.tasks.Continuation)
+com.google.android.gms.tasks.TaskCompletionSource:
+    public boolean trySetResult(java.lang.Object)
+com.google.android.gms.tasks.Tasks:
+    public static com.google.android.gms.tasks.Task forException(java.lang.Exception)
+    public static com.google.android.gms.tasks.Task call(java.util.concurrent.Callable)
+    public static com.google.android.gms.tasks.Task call(java.util.concurrent.Executor,java.util.concurrent.Callable)
+    public static java.lang.Object await(com.google.android.gms.tasks.Task)
+    public static java.lang.Object await(com.google.android.gms.tasks.Task,long,java.util.concurrent.TimeUnit)
+    public static com.google.android.gms.tasks.Task whenAll(java.util.Collection)
+    public static varargs com.google.android.gms.tasks.Task whenAll(com.google.android.gms.tasks.Task[])
+    private static java.lang.Object zzb(com.google.android.gms.tasks.Task)
+    private static void zza(com.google.android.gms.tasks.Task,com.google.android.gms.tasks.Tasks$zzb)
+com.google.android.gms.tasks.Tasks$zza
+com.google.android.gms.tasks.Tasks$zzb
+com.google.android.gms.tasks.Tasks$zzc
+com.google.android.gms.tasks.zza
+com.google.android.gms.tasks.zzb
+com.google.android.gms.tasks.zzc
+com.google.android.gms.tasks.zzd
+com.google.android.gms.tasks.zze:
+    public final void cancel()
+com.google.android.gms.tasks.zzg
+com.google.android.gms.tasks.zzh
+com.google.android.gms.tasks.zzi
+com.google.android.gms.tasks.zzj
+com.google.android.gms.tasks.zzk:
+    public abstract void cancel()
+com.google.android.gms.tasks.zzn:
+    public final java.lang.Object getResult()
+    public final java.lang.Object getResult(java.lang.Class)
+    public final com.google.android.gms.tasks.Task addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener)
+    public final com.google.android.gms.tasks.Task addOnSuccessListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnSuccessListener)
+    public final com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
+    public final com.google.android.gms.tasks.Task addOnFailureListener(com.google.android.gms.tasks.OnFailureListener)
+    public final com.google.android.gms.tasks.Task addOnFailureListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnFailureListener)
+    public final com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
+    public final com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
+    public final com.google.android.gms.tasks.Task continueWith(com.google.android.gms.tasks.Continuation)
+    public final com.google.android.gms.tasks.Task continueWith(java.util.concurrent.Executor,com.google.android.gms.tasks.Continuation)
+    public final com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
+    public final com.google.android.gms.tasks.Task continueWithTask(java.util.concurrent.Executor,com.google.android.gms.tasks.Continuation)
+    public final boolean trySetResult(java.lang.Object)
+    private final void zzDG()
+com.google.android.gms.tasks.zzn$zza
+com.google.android.gms.tasks.zzo
+com.google.firebase.FirebaseApiNotAvailableException
+com.google.firebase.FirebaseException
+com.google.firebase.iid.zzb:
+    private android.os.Binder zzckd
+    private int zzcke
+    public final synchronized android.os.IBinder onBind(android.content.Intent)
+    public final int onStartCommand(android.content.Intent,int,int)
+    private final void zzm(android.content.Intent)
+    protected android.content.Intent zzn(android.content.Intent)
+    public boolean zzo(android.content.Intent)
+    public abstract void handleIntent(android.content.Intent)
+    static synthetic void zza(com.google.firebase.iid.zzb,android.content.Intent)
+com.google.firebase.iid.zzc
+com.google.firebase.iid.zzd
+com.google.firebase.iid.zze
+com.google.firebase.iid.zzf
+com.google.firebase.iid.zzg
+com.google.firebase.iid.zzh
+com.google.firebase.zzb
+com.google.protobuf.GeneratedExtensionRegistryLoader
+com.google.protobuf.java_com_google_android_gmscore_dev_policy_sets__3p_monolithic_raw_pre_munge_rollup_67e347e9GeneratedExtensionRegistryLite
+com.google.protobuf.java_com_google_android_gmscore_dev_policy_sets__3p_monolithic_raw_pre_munge_rollup_67e347e9GeneratedExtensionRegistryLite$Loader
+com.google.protobuf.zza
+com.google.protobuf.zzb
+com.google.protobuf.zzc
+com.google.protobuf.zzd
+com.google.protobuf.zze
+com.google.protobuf.zze$zza
+com.google.protobuf.zze$zzb
+com.google.protobuf.zze$zzc
+com.google.protobuf.zze$zzd
+com.google.protobuf.zzf

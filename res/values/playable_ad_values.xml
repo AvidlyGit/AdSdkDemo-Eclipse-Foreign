@@ -3,13 +3,22 @@
     <color name="playable_ad_black">#0F0F0F</color>
     <color name="playable_ad_blue">#3366ff</color>
     <color name="playable_ad_grey">#f4f4f4</color>
+<!--    <color name="playable_ad_translucent">#AB000000</color>-->
     <color name="playable_ad_transparent">#00000000</color>
     <color name="playable_ad_white">#ffffff</color>
     <dimen name="playable_ad_10dp">10dp</dimen>
     <dimen name="playable_ad_12dp">12dp</dimen>
     <dimen name="playable_ad_24dp">24dp</dimen>
+    <dimen name="playable_ad_scene_close_area_height">40dp</dimen>
+    <dimen name="playable_ad_scene_close_area_width">80dp</dimen>
     <dimen name="playable_ad_scene_close_btn_height">21dp</dimen>
     <dimen name="playable_ad_scene_close_btn_width">21dp</dimen>
     <drawable name="playable_ad_grey_drawable">#99999999</drawable>
     <item name="playable_scene_layer" type="id"/>
+<!--    <style name="PlayableAdTranslucentStyle" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/playable_ad_translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>-->
 </resources>

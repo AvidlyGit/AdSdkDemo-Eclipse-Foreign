@@ -68,8 +68,6 @@
         <!-- facebook -->
 
         <!-- sdk -->
-        <service android:name="com.avidly.ads.push.AvidlyPushService"/>
-
         <activity
             android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDialogActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -231,7 +229,7 @@
             android:name="com.my.target.ads.MyTargetActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
         <!-- vk -->
-
+        
         <!-- batmobi -->
         <activity
             android:name="com.batmobi.BatMobiActivity"
@@ -246,7 +244,7 @@
             </intent-filter>
         </receiver>
         <!-- batmobi -->
-
+        
         <!-- inmobi -->
         <receiver
             android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
