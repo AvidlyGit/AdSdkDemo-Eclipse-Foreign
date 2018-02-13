@@ -1,4 +1,4 @@
-package com.avidly.ballz;
+package com.holaverse.queenslots.casino.free;
 
 import static android.Manifest.permission.READ_PHONE_STATE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;

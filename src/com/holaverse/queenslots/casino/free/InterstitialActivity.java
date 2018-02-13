@@ -1,8 +1,8 @@
-package com.avidly.ballz;
+package com.holaverse.queenslots.casino.free;
 
 import com.avidly.ads.AvidlyInterstitialAd;
 import com.avidly.ads.wrapper.interstitial.AvidlyInterstitialAdListener;
-import com.avidly.ballz.R;
+import com.holaverse.queenslots.casino.free.R;
 
 import android.app.Activity;
 import android.os.Bundle;

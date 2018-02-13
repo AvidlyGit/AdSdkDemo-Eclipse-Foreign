@@ -1,4 +1,4 @@
-package com.avidly.ballz;
+package com.holaverse.queenslots.casino.free;
 
 import com.avidly.ads.AvidlyAdsSdk;
 
