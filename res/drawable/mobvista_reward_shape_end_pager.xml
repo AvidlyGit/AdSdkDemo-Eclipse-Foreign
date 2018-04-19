@@ -3,7 +3,7 @@
     android:shape="rectangle" >
 
     <!-- 填充的颜色 -->
-    <solid android:color="@color/mobvista_reward_end_pager_cta_color" />
+    <solid android:color="#1e7fda" />
     <!-- 设置按钮的四个角为弧形 -->
     <!-- android:radius 弧形的半径 -->
     <corners android:radius="6dp" />

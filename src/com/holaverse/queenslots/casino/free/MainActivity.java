@@ -3,6 +3,9 @@ package com.holaverse.queenslots.casino.free;
 import static android.Manifest.permission.READ_PHONE_STATE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
+import com.avidly.ads.AvidlyAdsSdk;
+import com.avidly.ads.AvidlyAdsSdk.AvidlyAdsGlobalZone;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -29,6 +32,9 @@ public class MainActivity extends Activity {
                 || ContextCompat.checkSelfPermission(this, READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{WRITE_EXTERNAL_STORAGE, READ_PHONE_STATE}, 001);
         }
+        
+
+        AvidlyAdsSdk.init(this, AvidlyAdsGlobalZone.AvidlyAdsGlobalZoneForeign);
         
 		btnBanner = (Button) findViewById(R.id.btnBanner);
 		btnBanner.setOnClickListener(new View.OnClickListener() {
