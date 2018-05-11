@@ -1,6 +1,6 @@
 package com.holaverse.queenslots.casino.free;
 
-import com.avidly.ads.AvidlyAdsSdk;
+import com.up.ads.UPAdsSdk;
 
 import android.app.Application;
 
@@ -14,6 +14,6 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        AvidlyAdsSdk.setDebuggable(true);
+        UPAdsSdk.setDebuggable(true);
     }
 }

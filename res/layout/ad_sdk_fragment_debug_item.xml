@@ -8,16 +8,17 @@
     <TextView
         android:id="@+id/ad_debug_union"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_weight="3"
         android:gravity="center_vertical"
+        android:minHeight="40dp"
         android:paddingLeft="8dp"/>
 
     <TextView
         android:id="@+id/ad_debug_sdk"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
         android:gravity="center"
         android:minHeight="40dp"
         android:minLines="2"/>
@@ -25,7 +26,8 @@
     <TextView
         android:id="@+id/ad_debug_server"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:minHeight="40dp"/>
 </LinearLayout>

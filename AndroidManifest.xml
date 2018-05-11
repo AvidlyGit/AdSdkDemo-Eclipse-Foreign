@@ -6,10 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="21" />
@@ -50,7 +49,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light" />
 
-
         <!-- admob -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -62,20 +60,65 @@
             android:theme="@android:style/Theme.Translucent"/>
         <!-- admob -->
 
-        <!-- facebook -->
+        <!-- 广告SDK -->
         <activity
-            android:name="com.facebook.ads.InterstitialAdActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+            android:name="com.up.ads.wrapper.activity.UPAccessPrivacyInfoNotifyActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/UpDialogStyle"/>
         <activity
-            android:name="com.facebook.ads.AudienceNetworkActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <!-- facebook -->
+            android:name="com.up.ads.wrapper.activity.UPInterstitialDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/UpDialogStyle"/>
+        <activity
+            android:name="com.up.ads.debug.UPRewardVideoDebugActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.up.ads.debug.video.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.up.ads.debug.UPInterstitialDebugActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.up.ads.debug.inter.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.up.ads.adapter.interstitial.fbn.UPFbnInterstitialAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.up.ads.adapter.interstitial.inner.UPInnerInterstitialAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.up.ads.adapter.exit.inner.single.UPInnerSingleExitAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.up.ads.adapter.exit.inner.list.UPInnerListExitAdActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.up.ads.adapter.exit.inner.UPAppsAdsActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <!-- 广告SDK -->
 
-        <!-- sdk -->
+        <!-- 兼容3003以下的 sdk -->
         <activity
             android:name="com.avidly.ads.wrapper.interstitial.AvidlyInterstitialDialogActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@style/AvidlyDialogStyle"/>
+            android:theme="@style/UpDialogStyle"/>
         <activity
             android:name="com.avidly.ads.debug.AvidlyRewardVideoDebugActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -103,7 +146,7 @@
         <activity
             android:name="com.avidly.ads.adapter.interstitial.inner.InnerInterstitialAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
         <activity
             android:name="com.avidly.ads.adapter.exit.inner.single.InnerSingleExitAdActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -119,11 +162,16 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Black.NoTitleBar">
         </activity>
+        <!-- 兼容3003以下的 sdk -->
+
+        <!-- facebook -->
         <activity
-            android:name="com.avidly.ads.helper.AvidlyCheatActivity"
-            android:theme="@android:style/Theme.NoDisplay">
-        </activity>
-        <!-- sdk -->
+            android:name="com.facebook.ads.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <!-- facebook -->
 
         <!-- adcolony -->
         <activity
@@ -134,7 +182,6 @@
             android:name="com.adcolony.sdk.AdColonyAdViewActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
         <!-- adcolony -->
-
 
         <!-- vungle -->
         <activity
@@ -151,14 +198,18 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <!-- vungle -->
 
-
         <!-- mobvista -->
         <activity
             android:name="com.mobvista.msdk.reward.player.MVRewardVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.mobvista.msdk.interstitial.view.MVInterstitialActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mobvista.msdk.mvjscommon.authority.activity.MVAuthorityActivity"
+            android:screenOrientation="portrait"/>
         <!-- mobvista -->
-
 
         <!-- unity -->
         <activity
@@ -166,19 +217,16 @@
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-
         <activity
             android:name="com.unity3d.ads.adunit.AdUnitTransparentActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-
         <activity
             android:name="com.unity3d.ads.adunit.AdUnitTransparentSoftwareActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-
         <activity
             android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
@@ -202,12 +250,14 @@
         <!-- applovin -->
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="e-4s7LbXsuJb2oXtoW10amMsJ9scHJhwHmmP6LxzEEZH159qbBqBxA2FKvsbCXWUIHuPdqMs2w840HucShoOtq"/>
+            android:value="BLZ3nWD4mwe_7TFhC7kqaUqZMz32l9nxVL-GtCKc6-cEWsxizeXT8L7UJAX2KJ-qey4W9P7FNkUvaPcT295AUD"/>
 
         <activity
-            android:name="com.applovin.adview.AppLovinInterstitialActivity"/>
+            android:name="com.applovin.adview.AppLovinInterstitialActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity
-            android:name="com.applovin.adview.AppLovinConfirmationActivity"/>
+            android:name="com.applovin.adview.AppLovinConfirmationActivity"
+            android:configChanges="orientation|screenSize"/>
         <!-- applovin -->
 
         <!-- chartboost -->
@@ -274,12 +324,6 @@
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
         <!-- domob -->
 
-        <!-- youappi -->
-        <activity
-            android:name="com.youappi.ai.sdk.AdActivity"
-            android:configChanges="screenSize|orientation"/>
-        <!-- youappi -->
-
         <!--tapjoy -->
         <activity
             android:name="com.tapjoy.TJAdUnitActivity"
@@ -299,10 +343,60 @@
         <!--tapjoy -->
 
         <!--centrixlink -->
-        <activity android:name="com.centrixlink.SDK.FullScreenADActivity"
-                  android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
-                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.centrixlink.SDK.FullScreenADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!--centrixlink -->
+
+        <!--youlan -->
+        <activity
+            android:name="com.youlan.youlansdk.views.ad.RewardedVideoAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name="com.youlan.youlansdk.views.base.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <!--youlan -->
+
+        <!--amazon -->
+        <activity
+            android:name="com.amazon.device.ads.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <!--amazon -->
+
+
+        <!-- batmobi -->
+        <activity
+            android:name="com.batmobi.BatMobiActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver android:name="com.batmobi.BatMobiBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- batmobi -->
+
+
+        <!-- inmobi -->
+        <receiver
+            android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.inmobi.share.id" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- inmobi -->
     </application>
 
 </manifest>

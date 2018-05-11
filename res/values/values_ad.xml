@@ -13,21 +13,11 @@
     <string name="ad_exit_more">More</string>
     <string name="ad_exit_no">No</string>
     <string name="ad_exit_yes">Yes</string>
+    <string name="ad_gdpr_accept">Accept</string>
+    <string name="ad_gdpr_define">Define</string>
+    <string name="ad_gdpr_message">Ads are personalized. Denying would disable it.</string>
     <string name="ad_inner_close">Close after %1$d seconds</string>
     <string name="ad_inner_play">Play Now</string>
-    <style name="AvidlyDialogStyle" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowActionModeOverlay">true</item>
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:backgroundDimAmount">0.7</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-    </style>
     <style name="PlayableAdTranslucentStyle" parent="android:Theme">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/playable_ad_translucent</item>
@@ -39,5 +29,28 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="UpAlertDialogStyle" parent="android:Theme.DeviceDefault.Light.Dialog.MinWidth">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@android:color/white</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="UpDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
 </resources>

@@ -3,8 +3,8 @@ package com.holaverse.queenslots.casino.free;
 import static android.Manifest.permission.READ_PHONE_STATE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
-import com.avidly.ads.AvidlyAdsSdk;
-import com.avidly.ads.AvidlyAdsSdk.AvidlyAdsGlobalZone;
+import com.up.ads.UPAdsSdk;
+import com.up.ads.tool.AccessPrivacyInfoManager;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,8 +33,18 @@ public class MainActivity extends Activity {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{WRITE_EXTERNAL_STORAGE, READ_PHONE_STATE}, 001);
         }
         
-
-        AvidlyAdsSdk.init(this, AvidlyAdsGlobalZone.AvidlyAdsGlobalZoneForeign);
+        UPAdsSdk.isEuropeanUnionUser(this, new UPAdsSdk.UPEuropeanUnionUserCheckCallBack() {
+            @Override
+            public void isEuropeanUnionUser(boolean isEuropeanUnionUser) {
+                if (isEuropeanUnionUser) {
+                    //这是GDPR第一种授权方式
+                    UPAdsSdk.updateAccessPrivacyInfoStatus(MainActivity.this, AccessPrivacyInfoManager.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusAccepted);
+                    UPAdsSdk.init(MainActivity.this, UPAdsSdk.UPAdsGlobalZone.UPAdsGlobalZoneForeign);
+                } else {
+                    UPAdsSdk.init(MainActivity.this, UPAdsSdk.UPAdsGlobalZone.UPAdsGlobalZoneForeign);
+                }
+            }
+        });
         
 		btnBanner = (Button) findViewById(R.id.btnBanner);
 		btnBanner.setOnClickListener(new View.OnClickListener() {
