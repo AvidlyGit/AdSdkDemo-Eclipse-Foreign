@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/mobpower_video_cta_download"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="DWONLOAD"
+            android:textColor="@color/mobpower_videoad_component_white"
+            android:textSize="13dp" />
+
+
+        <com.mobpower.video.ui.view.RecycleImageView
+            android:id="@+id/mobpower_video_cta_app_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/mobpower_video_cta_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mobpower_video_icon_margin_left_right_2"
+            android:layout_marginRight="@dimen/mobpower_video_icon_margin_left_right_2"
+            android:layout_toLeftOf="@id/mobpower_video_cta_download"
+            android:layout_toRightOf="@id/mobpower_video_cta_app_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="app name"
+            android:textColor="@color/mobpower_videoad_component_white"
+            android:textSize="13dp" />
+
+        <com.mobpower.video.ui.view.LoadingView
+            android:id="@+id/mobpower_video_cta_loading_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

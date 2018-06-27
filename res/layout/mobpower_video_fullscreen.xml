@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mobpower_videoad_component_white">
+
+
+    <com.mobpower.video.ui.view.RecycleImageView
+        android:id="@+id/mobpower_video_app_banner"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/mobpower_videoad_component_white"/>
+
+    <com.mobpower.video.ui.view.RecycleImageView
+        android:id="@+id/mobpower_video_ad_choice"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/mobpower_video_icon_ad"
+        android:visibility="visible"/>
+
+    <com.mobpower.video.ui.view.RecycleImageView
+        android:id="@+id/mobpower_video_icon_close"
+        android:layout_width="@dimen/mobpower_video_close_size"
+        android:layout_height="@dimen/mobpower_video_close_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/mobpower_video_icon_close"
+        android:padding="10dp" />
+
+    <com.mobpower.video.ui.view.RecycleImageView
+        android:id="@+id/mobpower_video_app_icon"
+        android:layout_width="@dimen/mobpower_video_icon_size_1"
+        android:layout_height="@dimen/mobpower_video_icon_size_1"
+        android:layout_below="@id/mobpower_video_app_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mobpower_video_icon_margin_top_1" />
+
+    <TextView
+        android:id="@+id/mobpower_video_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/mobpower_videoad_title_color"
+        android:textSize="@dimen/mobpower_video_title_size"
+        android:layout_below="@id/mobpower_video_app_icon"
+        android:layout_marginTop="@dimen/mobpower_video_icon_margin_bottom_1"
+        android:layout_marginLeft="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:layout_marginRight="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:layout_centerHorizontal="true"/>
+
+    <com.mobpower.video.ui.view.AppRatingView
+        android:id="@+id/mobpower_video_app_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobpower_video_app_name"
+        android:layout_marginTop="@dimen/mobpower_video_icon_margin_bottom_1"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/mobpower_video_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mobpower_video_icon_margin_bottom_1"
+        android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/mobpower_video_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mobpower_video_button_height"
+        android:layout_above="@id/mobpower_video_bottom_view"
+        android:layout_marginLeft="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:layout_marginRight="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:text="DWONLOAD"
+        android:textColor="@color/mobpower_videoad_component_white"
+        android:textSize="@dimen/mobpower_video_button_text_size" />
+
+    <TextView
+        android:id="@+id/mobpower_video_app_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mobpower_video_app_rating"
+        android:layout_above="@id/mobpower_video_download"
+        android:layout_marginBottom="@dimen/mobpower_video_desc_margin_top_bottom_1"
+        android:layout_marginLeft="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:layout_marginRight="@dimen/mobpower_video_icon_margin_left_right_2"
+        android:layout_marginTop="@dimen/mobpower_video_desc_margin_top_bottom_1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="8"
+        android:text=""
+        android:textColor="@color/mobpower_videoad_desc_color"
+        android:textSize="@dimen/mobpower_video_desc_text_size"/>
+
+    <com.mobpower.video.ui.view.LoadingView
+        android:id="@+id/mobpower_video_loading_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

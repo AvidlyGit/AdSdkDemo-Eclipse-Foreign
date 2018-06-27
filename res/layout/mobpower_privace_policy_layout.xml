@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="433dp"
+    android:background="#00000000">
+
+
+    <ImageView
+        android:id="@+id/mobpower_policy_close_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/mobpower_core_icon_close"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mobpower_policy_close_view"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/mobpower_policy_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/mobpower_policy_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+
+            <WebView
+                android:id="@+id/mobpower_policy_webview"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="10dp"
+                android:padding="1dp"></WebView>
+
+            <View
+                android:id="@+id/mobpower_webview_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/mobpower_policy_webview"
+                android:layout_alignBottom="@id/mobpower_policy_webview"
+                android:layout_alignLeft="@id/mobpower_policy_webview"
+                android:layout_alignRight="@id/mobpower_policy_webview"/>
+
+            <LinearLayout
+                android:id="@+id/mobpower_policy_check_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobpower_policy_webview"
+                android:gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/mobpower_policy_check_box"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/mobpower_check_box_selector"
+                    android:checked="true"
+                    android:button="@null"/>
+
+                <TextView
+                    android:id="@+id/mobpower_policy_check_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Recommend ads that I'm interested in"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mobpower_policy_agree_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/mobpower_policy_check_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#ff3eb4b4"
+                android:gravity="center"
+                android:text="Yes, I Agree"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mobpower_policy_reject_view"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/mobpower_policy_agree_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="13dp"
+                android:text="No,Thanks"
+                android:textColor="#777777"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

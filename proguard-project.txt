@@ -75,7 +75,6 @@
 
 
 
-
 # avidly
 -keep class com.avidly.ads.** {*;}
 -keep class com.up.ads.** {*;}
@@ -408,6 +407,15 @@ public static final ** CREATOR;
 -keep class com.amazon.device.ads.** { *; }
 # amazon end
 
+# mobpower
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.mobpower.** {*; }
+-keep class com.power.** {*; }
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+# mobpower end
 
 
 

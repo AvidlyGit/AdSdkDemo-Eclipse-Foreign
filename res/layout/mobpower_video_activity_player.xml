@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mobpower_video_layout_back"
+    android:background="@color/mobpower_videoad_button_bg_color_def"
+    >
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:id="@+id/mobpower_video_icon_close_11"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--&gt;-->
+        <!--<com.mobpower.ad.common.ui.RecycleImageView-->
+            <!--android:id="@+id/mobpower_icon_close"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:src="@drawable/mobpower_video_icon_close"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+    <!--android:layout_below="@id/mobpower_icon_close"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mobpower_video_layout"
+        android:background="@color/mobpower_videoad_button_bg_color_def"
+        >
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

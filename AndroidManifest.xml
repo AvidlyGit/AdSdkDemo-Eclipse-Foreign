@@ -49,7 +49,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light" />
 
-        <!-- admob -->
+       <!-- admob -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
@@ -234,19 +234,6 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- unity -->
 
-        <!-- appnext -->
-        <activity
-            android:name="com.appnext.ads.interstitial.InterstitialActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <activity
-            android:name="com.appnext.ads.fullscreen.FullscreenActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <!-- appnext -->
-
         <!-- applovin -->
         <meta-data
             android:name="applovin.sdk.key"
@@ -296,7 +283,7 @@
 
         <!-- vk -->
         <activity
-            android:name="com.my.target.ads.MyTargetActivity"
+            android:name="com.my.target.common.MyTargetActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
         <!-- vk -->
 
@@ -364,39 +351,47 @@
             android:configChanges="keyboardHidden|orientation|screenSize"/>
         <!--amazon -->
 
-
+        <!--mobpower -->
+        <activity
+            android:name="com.mobpower.video.ui.VideoADActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.mobpower.video.ui.VideoADDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/mobpowerVideoDialogActivityTheme"/>
+        <!--mobpower -->
+        
         <!-- batmobi -->
         <activity
             android:name="com.batmobi.BatMobiActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 
-        <receiver android:name="com.batmobi.BatMobiBroadcastReceiver" >
+        <receiver android:name="com.batmobi.BatMobiBroadcastReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
 
-                <data android:scheme="package" />
+                <data android:scheme="package"/>
             </intent-filter>
         </receiver>
         <!-- batmobi -->
-
-
-        <!-- inmobi -->
+                
+		<!-- inmobi -->
         <receiver
             android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
-                <action android:name="com.inmobi.share.id" />
+                <action android:name="com.inmobi.share.id"/>
             </intent-filter>
         </receiver>
-
         <activity
             android:name="com.inmobi.rendering.InMobiAdActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:hardwareAccelerated="true"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <!-- inmobi -->
+        
     </application>
 
 </manifest>
