@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--关闭按钮-->
+    <TextView
+        android:id="@+id/btn_close_network_warn_dialog"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="8.3dp"
+        android:layout_marginTop="8.3dp"
+        android:background="@drawable/download_close_icon" />
+
+    <!--第一行重点提示-->
+
+    <TextView
+        android:id="@+id/tv_network_warn_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="23.5dp"
+        android:layout_marginRight="23.5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/network_dialog_warn_title"
+        android:textColor="@color/ssxinheihui1"
+        android:textSize="17sp" />
+
+    <!--第二行说明提示-->
+
+    <TextView
+        android:id="@+id/tv_network_warn_message"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="23.5dp"
+        android:layout_marginRight="23.5dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/network_dialog_warn_message"
+        android:textColor="@color/ssxinheihui3"
+        android:textSize="15sp" />
+
+    <!--第一个按钮-->
+
+    <TextView
+        android:id="@+id/btn_continue_download"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="31.5dp"
+        android:layout_marginRight="31.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/download_button_bg"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:text="@string/network_dialog_warn_continue_download"
+        android:textColor="@drawable/download_blue_selector" />
+
+    <!--第二个按钮-->
+
+    <TextView
+        android:id="@+id/btn_order_wifi_download"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/network_dialog_warn_order_wifi_download"
+        android:textColor="@drawable/download_black_selector"
+        android:layout_marginBottom="28dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

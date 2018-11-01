@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_download_bg_progress_textview_downloading">#505050</color>
+    <color name="ssxinzi3">@color/ssxinyejianheise1</color>
+    <color name="ssxinzi3_press">@color/ssxinyejianheise1_press</color>
+    <color name="ssxinzi3_selected">@color/ssxinyejianheise2</color>
+</resources>

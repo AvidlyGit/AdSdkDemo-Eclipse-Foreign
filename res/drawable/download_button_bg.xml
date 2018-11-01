@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true">
+        <shape>
+            <solid
+                android:color="@color/detail_download_white" />
+            <stroke
+                android:color="@color/detail_download_blue_pressed"
+                android:width="1dp" />
+            <corners
+                android:radius="@dimen/download_button_radius" />
+        </shape>
+
+    </item>
+    <item>
+        <shape>
+            <solid
+                android:color="@color/detail_download_white" />
+            <stroke
+                android:color="@color/detail_download_blue"
+                android:width="1dp" />
+            <corners
+                android:radius="@dimen/download_button_radius" />
+        </shape>
+    </item>
+</selector>
