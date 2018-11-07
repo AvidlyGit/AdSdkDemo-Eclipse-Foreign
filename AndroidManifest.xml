@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.holaverse.queenslots.casino.free"
+    package="adam.lean.foreign"
     android:versionCode="1"
     android:versionName="1.0" >
 

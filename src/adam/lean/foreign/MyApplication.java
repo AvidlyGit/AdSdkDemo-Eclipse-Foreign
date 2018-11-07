@@ -1,4 +1,4 @@
-package com.holaverse.queenslots.casino.free;
+package adam.lean.foreign;
 
 import com.up.ads.UPAdsSdk;
 
