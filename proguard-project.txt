@@ -74,8 +74,6 @@
 
 
 
-
-
 # avidly
 -keep class com.avidly.ads.** {*;}
 -keep class com.up.ads.** {*;}
@@ -413,6 +411,3 @@ public static final ** CREATOR;
     public static final ** CREATOR;
 }
 # mobpower end
-
-
-
