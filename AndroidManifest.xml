@@ -343,6 +343,17 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- batmobi -->
         
+        <!-- display.io -->
+        <activity
+            android:name="io.display.sdk.DioActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="io.display.sdk.DioTranslucentActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="io.display.sdk.device.PermissionsHandler" />
+        <!-- display.io -->
+        
     </application>
 
 </manifest>
