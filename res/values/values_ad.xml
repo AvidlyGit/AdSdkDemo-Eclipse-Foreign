@@ -4,7 +4,6 @@
     <color name="ad_inner_color_gray_dark">#4A4A4A</color>
     <color name="ad_inner_color_gray_light">#9B9B9B</color>
     <color name="ad_inner_color_line">#19000000</color>
-    <color name="mobpower_videoad_transparent">#00000000</color>
     <color name="playable_ad_translucent">#AB000000</color>
     <string name="ad_app_key">"70f4779f0c0c42dffcb518900449a4bf"</string>
     <string name="ad_apps_title">More Games</string>
@@ -53,17 +52,5 @@
         <item name="android:windowCloseOnTouchOutside">false</item>
         <item name="android:backgroundDimAmount">0.7</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
-    </style>
-    <style name="mobpowerVideoDialogActivityTheme" parent="@android:style/Theme.Holo.Dialog.MinWidth">
-        <item name="android:windowFrame">@null</item><!-- 边框 -->
-        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在activity上 -->
-        <item name="android:windowIsTranslucent">false</item><!-- 透明 -->
-        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
-        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
-        <item name="android:backgroundDimAmount">0.4</item><!-- 灰度 -->
-        <item name="android:windowContentOverlay">@null</item><!-- 对话框是否有遮盖 -->
-        <item name="android:colorBackgroundCacheHint">@null</item><!-- 背景缓存颜色 -->
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:windowBackground">@color/mobpower_videoad_transparent</item><!-- 背景透明 -->
     </style>
 </resources>
