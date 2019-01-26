@@ -306,20 +306,12 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <!-- maio -->
 
-        <!-- oneway -->
-        <activity
-            android:name="mobi.oneway.sdk.AdShowActivity"
-            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-            android:hardwareAccelerated="true"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <!-- oneway -->
-
         <!--amazon -->
         <activity
             android:name="com.amazon.device.ads.AdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <!--amazon -->
+
         
     </application>
 
