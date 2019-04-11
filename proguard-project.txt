@@ -71,6 +71,7 @@
 -keep public class * extends android.support.v4.**   
 -keep public class * extends android.app.Fragment  
 
+
 # avidly
 -keep class com.avidly.ads.** {*;}
 -keep class com.up.ads.** {*;}
@@ -159,6 +160,7 @@
 -dontwarn sun.misc.**
 -dontwarn com.vungle.warren.**
 -dontwarn okio.**
+-dontwarn okhttp3.**
 -dontwarn retrofit2.**
 -dontwarn com.moat.**
 -dontwarn com.google.android.gms.ads.identifier.**

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+
+    <RelativeLayout
+        android:id="@+id/ad_union_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:background="@color/debug_color_gray">
+
+        <ImageView
+            android:id="@+id/icon_ad_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ad_icon_error" />
+
+        <RelativeLayout
+            android:id="@+id/layout_ad_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ad_icon_play_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/layout_ad_play"
+            android:layout_toRightOf="@id/icon_ad_state"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/ad_name"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ad_version"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_below="@id/ad_name"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+</LinearLayout>

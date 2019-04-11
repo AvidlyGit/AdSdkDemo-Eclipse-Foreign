@@ -4,6 +4,12 @@
     <color name="ad_inner_color_gray_dark">#4A4A4A</color>
     <color name="ad_inner_color_gray_light">#9B9B9B</color>
     <color name="ad_inner_color_line">#19000000</color>
+    <color name="debug_color_gray">#F0F0F0</color>
+    <color name="debug_color_green">#259B24</color>
+    <color name="debug_text_color_dark">#101010</color>
+    <color name="debug_text_color_gray">#999999</color>
+    <color name="debug_text_color_light">#DDDDDD</color>
+    <color name="debug_text_color_white">#FFFFFF</color>
     <color name="playable_ad_translucent">#AB000000</color>
     <string name="ad_app_key">"70f4779f0c0c42dffcb518900449a4bf"</string>
     <string name="ad_apps_title">More Games</string>
